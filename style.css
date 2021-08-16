@@ -10,13 +10,22 @@ header{
 }
 
 .header-wrap {
-    height: 60px;
+    height: 80px;
     display: flex;
     justify-content:baseline;
 }
 .header-wrap img{
-    margin: 1%;
+    height: 60px;
+    margin: 10px 0;
 }
+
+.page-name {
+    letter-spacing: 3px;
+    font-family:ヒラギノ明朝 Pro;
+    margin: 15px;
+    color: #707070;
+}
+
 
 #top {
     height: 700px;
@@ -25,27 +34,11 @@ header{
     /* background-color: #dcecf7 ; */
 }
 
-.page-name {
-    letter-spacing: 3px;
-    font-family:ヒラギノ明朝 Pro;
-    margin: 1%;
-}
-
-.weatherText {
-    font-weight: bolder;
-    font-size: 40px;
-    color: #0468BF;
-    height: 100px;
-    line-height: 100px;
-    letter-spacing: 2px;
-}
-.countDown{
-      font-weight: bolder;
-      font-size: 40px;
-      color: #D9AE79;
-      letter-spacing: 1px;
-      height: 100px;
-      line-height: 100px;
+#history {
+     font-family:'Times New Roman', Times, serif;
+     color: #707070;
+     font-size: 25px;
+     letter-spacing: 5px;
 }
 
 
@@ -54,9 +47,9 @@ header{
     }
 
 .member-title {
-            margin-bottom: 70px;
+            margin: 100px 0;
             font-size: 30px;
-            font-family: Roboto regular;
+            font-family: Roboto bold;
             letter-spacing: 5.4px;
             color: #707070;
 }
@@ -84,6 +77,7 @@ header{
         display: flex;
         justify-content: space-between;
         height: 900px;
+        color: #707070;
     }
 .member-box {
             display: block;
@@ -121,14 +115,56 @@ header{
             }
             
         
-
-
-        
-
-
-
 #last {
     height: 700px;
     background-image: url(./img/top.jpg);
     background-size: cover;
+}
+
+
+.countDown{
+      font-weight: bolder;
+      font-size: 40px;
+      color: #D9AE79;
+      letter-spacing: 1px;
+      height: 100px;
+      line-height: 100px;
+}
+
+
+footer {
+    height: 100px;
+    border-top: 2px solid #D9AE79;
+    font-weight: bolder;
+    color:#0468BF;
+}
+
+footer a {
+    color:whitesmoke;
+    text-decoration: none;
+    
+    font-size: 20px;
+    background-color: #049DD9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer a:hover {
+    color:whitesmoke;
+    background-color: #049DD9;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+.js-animation {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(40px);
+    transition: all 1s;
+}
+.js-animation.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
 }

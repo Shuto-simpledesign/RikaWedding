@@ -1,0 +1,134 @@
+body {
+    margin: auto;
+    text-align: center;
+    width: 1200px;
+}
+header{
+ width: 100%;
+    height: 80px;
+    scroll-behavior:smooth;
+}
+
+.header-wrap {
+    height: 60px;
+    display: flex;
+    justify-content:baseline;
+}
+.header-wrap img{
+    margin: 1%;
+}
+
+#top {
+    height: 700px;
+    background-image: url(./img/HAPPY_WEDDING.jpg);
+    background-size: cover;
+    /* background-color: #dcecf7 ; */
+}
+
+.page-name {
+    letter-spacing: 3px;
+    font-family:ヒラギノ明朝 Pro;
+    margin: 1%;
+}
+
+.weatherText {
+    font-weight: bolder;
+    font-size: 40px;
+    color: #0468BF;
+    height: 100px;
+    line-height: 100px;
+    letter-spacing: 2px;
+}
+.countDown{
+      font-weight: bolder;
+      font-size: 40px;
+      color: #D9AE79;
+      letter-spacing: 1px;
+      height: 100px;
+      line-height: 100px;
+}
+
+
+.inner {
+        padding-top: 50px ;
+    }
+
+.member-title {
+            margin-bottom: 70px;
+            font-size: 30px;
+            font-family: Roboto regular;
+            letter-spacing: 5.4px;
+            color: #707070;
+}
+.member-title::before {
+                display:inline-block;    
+                border-top: 1px solid #707070;
+                width:150px;
+                margin-right:20px;
+                margin-bottom: 10px;
+                content:"";
+            }
+.member-title::after {
+                display:inline-block;    
+                border-top: 1px solid #707070;
+                width:150px;
+                margin-left:20px;
+                margin-bottom: 10px;
+                content:"";
+            } 
+
+
+ .member-wrap {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        height: 900px;
+    }
+.member-box {
+            display: block;
+            width: 300px;
+            height: 400px;
+            /* font-family: Roboto Mono for Powerline; */
+            font-family:'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+         .member-img {
+                height: 400px;
+                padding-bottom: 35px;
+            }    
+               .member-img img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+            .name {
+                font-size: 40px;
+                line-height: 30px;
+                padding-bottom: 20px;
+                            }
+            
+            .price {
+                text-align: center;
+                font-size: 30px;
+            }
+           .txt {
+                  width: 90%;
+                  margin: 0 auto;
+                  margin-bottom: 35px;
+                  font-size: 20px;
+            }
+            
+        
+
+
+        
+
+
+
+#last {
+    height: 700px;
+    background-image: url(./img/top.jpg);
+    background-size: cover;
+}

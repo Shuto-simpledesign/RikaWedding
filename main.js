@@ -4,7 +4,8 @@ countDown.classList.add("countDown");
 
 setInterval(() => {
     let now = moment();
-    let date = moment([2021, 10, 17]);
+
+    let date = moment([2021, 9, 17]);
 
     let sec = date.diff(now, 's') % 60;
     let min = date.diff(now, 'm') % 60;
@@ -15,17 +16,18 @@ setInterval(() => {
 }, 1000);
 
 
+
 function showElementAnimation() {
 
-    var element = document.getElementsByClassName('js-animation');
+    const element = document.getElementsByClassName('js-animation');
     if (!element) return; // 要素がなかったら処理をキャンセル
 
-    var showTiming = window.innerHeight > 768 ? 300 : 40; // 要素が出てくるタイミングはここで調整
-    var scrollY = window.pageYOffset;
-    var windowH = window.innerHeight;
+    const showTiming = window.innerHeight > 768 ? 300 : 40; // 要素が出てくるタイミングはここで調整
+    const scrollY = window.pageYOffset;
+    const windowH = window.innerHeight;
 
-    for (var i = 0; i < element.length; i++) {
-        var elemClientRect = element[i].getBoundingClientRect(); var elemY = scrollY + elemClientRect.top; if (scrollY + windowH - showTiming > elemY) {
+    for (let i = 0; i < element.length; i++) {
+        let elemClientRect = element[i].getBoundingClientRect(); let elemY = scrollY + elemClientRect.top; if (scrollY + windowH - showTiming > elemY) {
             element[i].classList.add('is-show');
         } else if (scrollY + windowH < elemY) {
             // 上にスクロールして再度非表示にする場合はこちらを記述
@@ -35,6 +37,9 @@ function showElementAnimation() {
 }
 showElementAnimation();
 window.addEventListener('scroll', showElementAnimation);
+
+
+
 
 // const kariyushi = document.getElementById("kariyushi");
 // const weatherText = document.createElement("p");
